@@ -343,20 +343,30 @@ for i=1:length(ParameterGroup);
 end
 
 
-%   Read conversion factors
-for i=1:length(ParameterGroup(analogGroup).Parameter);
-    name=char(ParameterGroup(analogGroup).Parameter(i).name);
-    if strcmp(name,'GEN_SCALE')
-        genericAnalogScale = ParameterGroup(analogGroup).Parameter(i).data;
-    elseif strcmp(name,'GAIN')
-        gain = ParameterGroup(analogGroup).Parameter(i).data;
-    elseif strcmp(name,'OFFSET')
-        analogOffset = ParameterGroup(analogGroup).Parameter(i).data;
-    elseif strcmp(name,'SCALE')
-        channelAnalogScale = ParameterGroup(analogGroup).Parameter(i).data;
-    else
-        continue
+% initialise analog parameters (Added by Prasanna Sritharan, 2019)
+genericAnalogScale = 0;
+gain = 0;
+analogOffset = 0;
+channelAnalogScale = 0;
+
+if (NanalogChannels>0)  % Outer loop added by Prasanna Sritharan, 2019
+    
+    %   Read conversion factors
+    for i=1:length(ParameterGroup(analogGroup).Parameter);
+        name=char(ParameterGroup(analogGroup).Parameter(i).name);
+        if strcmp(name,'GEN_SCALE')
+            genericAnalogScale = ParameterGroup(analogGroup).Parameter(i).data;
+        elseif strcmp(name,'GAIN')
+            gain = ParameterGroup(analogGroup).Parameter(i).data;
+        elseif strcmp(name,'OFFSET')
+            analogOffset = ParameterGroup(analogGroup).Parameter(i).data;
+        elseif strcmp(name,'SCALE')
+            channelAnalogScale = ParameterGroup(analogGroup).Parameter(i).data;
+        else
+            continue
+        end
     end
+    
 end
 
 %   Hardwire gain as some dodgy analog via Luke H
@@ -568,6 +578,7 @@ end
 %-------------------------------------------------------------------------------
 
 %%  Read analog labels
+analogGroup = [];
 for i=1:length(ParameterGroup);
     name=char(ParameterGroup(i).name);
     if strcmp(name,'ANALOG')
@@ -576,6 +587,7 @@ for i=1:length(ParameterGroup);
     end
 end
 
+analogLabelGroup = [];
 for i=1:length(ParameterGroup(analogGroup).Parameter);
     name=char(ParameterGroup(analogGroup).Parameter(i).name);
     if strcmp(name,'LABELS')
@@ -584,7 +596,15 @@ for i=1:length(ParameterGroup(analogGroup).Parameter);
     end
 end
 
-AnalogLabels = ParameterGroup(analogGroup).Parameter(analogLabelGroup).data;
+
+AnalogLabels = [];  % Added by Prasanna Sritharan, 2019
+if ~isempty(analogGroup)    % loops added by Prasanna Sritharan, 2019
+    if ~isempty(analogLabelGroup)
+        
+        AnalogLabels = ParameterGroup(analogGroup).Parameter(analogLabelGroup).data;
+
+    end
+end
 
 
 %%  Read event information
@@ -696,7 +716,12 @@ else
     kinDataIndex = 1;
     for i=1:Nmarkers;
         for j=1:lengthKinVariableListIn
-            if strcmp(MarkerLabels(i), kinVariableListIn(j))
+            
+            % match 3D labels, ignore any prefix in marker name (Prasanna Sritharan, 2019)
+            matchidx = regexp(MarkerLabels(i),['w*:?' kinVariableListIn(j)]);
+            
+            %if strcmp(MarkerLabels(i), kinVariableListIn(j))
+            if ~isempty(matchidx{1})    % Prasanna Sritharan, 2019
                 eval(['MarkerStruct. ' char(kinVariableListIn(j)) ' = squeeze(Markers(:,i,:));']);
                 %numKinVarsFound = numKinVarsFound + 1;
             end

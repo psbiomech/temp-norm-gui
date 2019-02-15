@@ -647,6 +647,9 @@ function pushbuttonGO_Callback(hObject, eventdata, handles)
 close all;
 TempNormGuiVersion = 1.1;
 
+% add code root to path (Added by Prasanna Sritharan, 2019)
+addpath(pwd);
+
 %   Unpack relevant fields from handles structure
 processAnalog = handles.processAnalog;
 process3d = handles.process3d;
@@ -746,7 +749,7 @@ for trialIndex = 1:handles.numberOfFiles;
     end
 
         
-    %   Get names of all 3d variables present in c3d file (
+    %   Get names of all 3d variables present in c3d file
     if handles.process3d
         completeVariableNamesInC3d = fieldnames(complete3dData.c3dVariables);
         numCompleteVariablesInC3d = length(completeVariableNamesInC3d);
@@ -988,6 +991,7 @@ for trialIndex = 1:handles.numberOfFiles;
 
 
     %%  Logical loop to define phases and cycles from c3d file if requested
+    handles.check2 = [];    % Added by Prasanna Sritharan, 2019
     if trialIndex == 1
         if getEventLabelsFromC3d == 1
             [handles.phasesAndCycles1] = definePhasesAndCyclesFromC3dSubGui(handles.numberOfPhasesAndCycles,eventTimes,eventLabels);
@@ -5251,7 +5255,7 @@ for trialIndex = 1:handles.numberOfFiles;
     end
 
     fclose('all');
-
+   
     if trialIndex == handles.numberOfFiles
         uiwait(msgbox('Processing is complete for all of your selected trials!', 'Message', 'modal'));
         fclose('all');
@@ -5265,7 +5269,8 @@ for trialIndex = 1:handles.numberOfFiles;
 %             return
 %         end
     end
-    %clear complete3dSpecifiers analogSpecifiers
+    %clear complete3dSpecifiers analogSpecifiers   
+    
     keep4 handles performCustomProcessing getEventLabelsFromC3d completeOutputNames customOutputNames  trialIndex summaryOutputVariables kinOutputGroups processAnalog process3d% remove all workspace variables except...
     close all  % close all figures
 end
