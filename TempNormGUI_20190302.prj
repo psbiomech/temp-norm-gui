@@ -1,0 +1,189 @@
+<deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
+  <configuration file="C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302.prj" location="C:\Users\Prasanna\Documents\projects\kane-c3d-extract" name="TempNormGUI_20190302" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>TempNormGUI_20190302</param.appname>
+    <param.icon />
+    <param.icons />
+    <param.version>1.0</param.version>
+    <param.authnamewatermark />
+    <param.email />
+    <param.company />
+    <param.summary />
+    <param.description>Last updated 02/03/2019 by:
+Prasanna Sritharan
+La Trobe Sports And Exercise Medicine Research Centre
+La Trobe University, Victoria, Australia</param.description>
+    <param.screenshot />
+    <param.guid />
+    <param.installpath.string>\TempNormGUI_20190302\</param.installpath.string>
+    <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
+    <param.logo />
+    <param.install.notes />
+    <param.target.install.notes />
+    <param.intermediate>${PROJECT_ROOT}\TempNormGUI_20190302\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\TempNormGUI_20190302\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\TempNormGUI_20190302\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\TempNormGUI_20190302</param.logdir>
+    <param.enable.clean.build>false</param.enable.clean.build>
+    <param.user.defined.mcr.options />
+    <param.target.type>subtarget.standalone</param.target.type>
+    <param.support.packages />
+    <param.web.mcr>true</param.web.mcr>
+    <param.package.mcr>false</param.package.mcr>
+    <param.no.mcr>false</param.no.mcr>
+    <param.web.mcr.name>TempNormGUI_20190302_Installer</param.web.mcr.name>
+    <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
+    <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
+    <param.windows.command.prompt>true</param.windows.command.prompt>
+    <param.create.log>false</param.create.log>
+    <param.log.file />
+    <unset>
+      <param.icon />
+      <param.icons />
+      <param.version />
+      <param.authnamewatermark />
+      <param.email />
+      <param.company />
+      <param.summary />
+      <param.screenshot />
+      <param.guid />
+      <param.installpath.string />
+      <param.installpath.combo />
+      <param.logo />
+      <param.target.install.notes />
+      <param.intermediate />
+      <param.files.only />
+      <param.output />
+      <param.logdir />
+      <param.enable.clean.build />
+      <param.user.defined.mcr.options />
+      <param.target.type />
+      <param.support.packages />
+      <param.web.mcr />
+      <param.package.mcr />
+      <param.no.mcr />
+      <param.package.mcr.name />
+      <param.no.mcr.name />
+      <param.windows.command.prompt />
+      <param.create.log />
+      <param.log.file />
+    </unset>
+    <fileset.main>
+      <file>${PROJECT_ROOT}\TempNormGUI_20190302.m</file>
+    </fileset.main>
+    <fileset.resources>
+      <file>${PROJECT_ROOT}\bw2mat.m</file>
+      <file>${PROJECT_ROOT}\bw2surf.m</file>
+      <file>${PROJECT_ROOT}\correctButterCutOff.m</file>
+      <file>${PROJECT_ROOT}\defineBPCutOffSubGui.fig</file>
+      <file>${PROJECT_ROOT}\defineBPCutOffSubGui.m</file>
+      <file>${PROJECT_ROOT}\defineEventLabelsFromC3dSubGui.m</file>
+      <file>${PROJECT_ROOT}\defineGeneralEventNamesSubGui.fig</file>
+      <file>${PROJECT_ROOT}\defineGeneralEventNamesSubGui.m</file>
+      <file>${PROJECT_ROOT}\definelEventLabelsFromC3dSubGui.m</file>
+      <file>${PROJECT_ROOT}\definePhasesAndCyclesFromC3dSubGui.fig</file>
+      <file>${PROJECT_ROOT}\definePhasesAndCyclesFromC3dSubGui.m</file>
+      <file>${PROJECT_ROOT}\definePhasesAndCyclesSubGui.fig</file>
+      <file>${PROJECT_ROOT}\definePhasesAndCyclesSubGui.m</file>
+      <file>${PROJECT_ROOT}\defineSegment2.m</file>
+      <file>${PROJECT_ROOT}\deg2rad.m</file>
+      <file>${PROJECT_ROOT}\descriptive2dPlot.m</file>
+      <file>${PROJECT_ROOT}\distance.m</file>
+      <file>${PROJECT_ROOT}\Fcorrectcutoff.m</file>
+      <file>${PROJECT_ROOT}\FgcstoAgcs.m</file>
+      <file>${PROJECT_ROOT}\fields2array.m</file>
+      <file>${PROJECT_ROOT}\findstringincellarray.m</file>
+      <file>${PROJECT_ROOT}\Fresultant2.m</file>
+      <file>${PROJECT_ROOT}\Fsoder.m</file>
+      <file>${PROJECT_ROOT}\keep4.m</file>
+      <file>${PROJECT_ROOT}\matfiltfilt.m</file>
+      <file>${PROJECT_ROOT}\matfiltfilt2.m</file>
+      <file>${PROJECT_ROOT}\meanhelicalaxis.m</file>
+      <file>${PROJECT_ROOT}\meanhelicalaxis_plots.m</file>
+      <file>${PROJECT_ROOT}\medianPowerFrequency.m</file>
+      <file>${PROJECT_ROOT}\minMax2dPlot.m</file>
+      <file>${PROJECT_ROOT}\mmv2struct.m</file>
+      <file>${PROJECT_ROOT}\rad2deg.m</file>
+      <file>${PROJECT_ROOT}\range.m</file>
+      <file>${PROJECT_ROOT}\readc3duwa.m</file>
+      <file>${PROJECT_ROOT}\readc3duwa_filt.m</file>
+      <file>${PROJECT_ROOT}\readc3duwaStruct.m</file>
+      <file>${PROJECT_ROOT}\readc3duwaStructDAVID.m</file>
+      <file>${PROJECT_ROOT}\reduce3dto2d.m</file>
+      <file>${PROJECT_ROOT}\repblanks.m</file>
+      <file>${PROJECT_ROOT}\replacezeroswithnans.m</file>
+      <file>${PROJECT_ROOT}\repminus.m</file>
+      <file>${PROJECT_ROOT}\reversearray.m</file>
+      <file>${PROJECT_ROOT}\rmse.m</file>
+      <file>${PROJECT_ROOT}\scale01.m</file>
+      <file>${PROJECT_ROOT}\scale2binary.m</file>
+      <file>${PROJECT_ROOT}\screw.m</file>
+      <file>${PROJECT_ROOT}\segmentorientation.m</file>
+      <file>${PROJECT_ROOT}\segmentorientation2.m</file>
+      <file>${PROJECT_ROOT}\soder.m</file>
+      <file>${PROJECT_ROOT}\splitPath.m</file>
+      <file>${PROJECT_ROOT}\splitstring.m</file>
+      <file>${PROJECT_ROOT}\subfigure.m</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_20190302.fig</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_20190302.m</file>
+      <file>${PROJECT_ROOT}\ThightoHJC.m</file>
+    </fileset.resources>
+    <fileset.package>
+      <file>${PROJECT_ROOT}\CompleteC3d2OutputVariableNames.csv</file>
+      <file>${PROJECT_ROOT}\CustomC3d2OutputVariableNames.csv</file>
+      <file>${PROJECT_ROOT}\license.txt</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_README.doc</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_README_260906.doc</file>
+    </fileset.package>
+    <fileset.depfun />
+    <build-deliverables>
+      <file location="${PROJECT_ROOT}\TempNormGUI_20190302\for_testing" name="TempNormGUI_20190302.exe" optional="false">C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302\for_testing\TempNormGUI_20190302.exe</file>
+      <file location="${PROJECT_ROOT}\TempNormGUI_20190302\for_testing" name="readme.txt" optional="true">C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\TempNormGUI_20190302\for_testing" name="splash.png" optional="false">C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302\for_testing\splash.png</file>
+    </build-deliverables>
+    <workflow />
+    <matlab>
+      <root>C:\Program Files\MATLAB\R2017a</root>
+      <toolboxes>
+        <toolbox name="fixedpoint" />
+        <toolbox name="matlabcoder" />
+        <toolbox name="matlabhdlcoder" />
+        <toolbox name="embeddedcoder" />
+      </toolboxes>
+      <toolbox>
+        <fixedpoint>
+          <enabled>true</enabled>
+        </fixedpoint>
+      </toolbox>
+      <toolbox>
+        <matlabcoder>
+          <enabled>true</enabled>
+        </matlabcoder>
+      </toolbox>
+      <toolbox>
+        <matlabhdlcoder>
+          <enabled>true</enabled>
+        </matlabhdlcoder>
+      </toolbox>
+      <toolbox>
+        <embeddedcoder>
+          <enabled>true</enabled>
+        </embeddedcoder>
+      </toolbox>
+    </matlab>
+    <platform>
+      <unix>false</unix>
+      <mac>false</mac>
+      <windows>true</windows>
+      <win2k>false</win2k>
+      <winxp>false</winxp>
+      <vista>false</vista>
+      <linux>false</linux>
+      <solaris>false</solaris>
+      <osver>6.2</osver>
+      <os32>false</os32>
+      <os64>true</os64>
+      <arch>win64</arch>
+      <matlab>true</matlab>
+    </platform>
+  </configuration>
+</deployment-project>
