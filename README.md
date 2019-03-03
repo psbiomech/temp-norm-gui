@@ -6,6 +6,6 @@ Last updated:\
 2 March 2019
 
 Updated by:\
-Prasanna Sritharan
-La Trobe Sports & Exercise Medicine Research Centre
+Prasanna Sritharan\
+La Trobe Sports & Exercise Medicine Research Centre\
 La Trobe University, Victoria, Australia
