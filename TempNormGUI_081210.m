@@ -1,7 +1,7 @@
-function varargout = TempNormGUI_LaTrobe_v20190302(varargin)
+function varargout = TempNormGUI_081210(varargin)
 
 % Modified by GUIDE v2.5 08-Dec-2010 11:16:01
-% Modified by Prasanna Sritharan, February 2019
+% Modified by Prasanna Sritharan, 2 March 2019
 
 %% Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;

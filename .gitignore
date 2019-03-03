@@ -1,6 +1,11 @@
-# TempNormGUI
-# Prasanna Sritharan, 2019
+# TempNormGUI_v20190302
+# Prasanna Sritharan, 2 March 2019
 
 
-# release folders
-TempNormGUI_20190302/
+# redistributable release folders
+TempNormGUI_v20190302_Resdistributable/
+TempNormGUI_v20190302_Resdistributable_resources/
+
+# matlab app release folders
+TempNormGUI_v20190302_MatlabApp/
+TempNormGUI_v20190302_MatlabApp_resources/

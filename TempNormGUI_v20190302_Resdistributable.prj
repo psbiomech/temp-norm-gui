@@ -1,28 +1,36 @@
 <deployment-project plugin="plugin.ezdeploy" plugin-version="1.0">
-  <configuration file="C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302.prj" location="C:\Users\Prasanna\Documents\projects\kane-c3d-extract" name="TempNormGUI_20190302" target="target.ezdeploy.standalone" target-name="Application Compiler">
-    <param.appname>TempNormGUI_20190302</param.appname>
-    <param.icon />
-    <param.icons />
+  <configuration file="C:\Users\Prasanna\Documents\projects\temp-norm-gui\TempNormGUI_v20190302_Resdistributable.prj" location="C:\Users\Prasanna\Documents\projects\temp-norm-gui" name="TempNormGUI_v20190302_Resdistributable" target="target.ezdeploy.standalone" target-name="Application Compiler">
+    <param.appname>TempNormGUI_v20190302</param.appname>
+    <param.icon>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable_resources\icon.ico</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable_resources\icon_32.png</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable_resources\icon_16.png</file>
+    </param.icons>
     <param.version>1.0</param.version>
     <param.authnamewatermark />
     <param.email />
     <param.company />
     <param.summary />
-    <param.description>Last updated 02/03/2019 by:
-Prasanna Sritharan
-La Trobe Sports And Exercise Medicine Research Centre
+    <param.description>Last updated:
+2 March 2019
+
+Last updated by:
+Prasanna Sirtharan
+La Trobe Sports &amp; Exercise Medicine Research Centre
 La Trobe University, Victoria, Australia</param.description>
-    <param.screenshot />
+    <param.screenshot>${PROJECT_ROOT}\TempNormGUI_Splash.jpg</param.screenshot>
     <param.guid />
-    <param.installpath.string>\TempNormGUI_20190302\</param.installpath.string>
+    <param.installpath.string>\TempNormGUI_v20190302\</param.installpath.string>
     <param.installpath.combo>option.installpath.programfiles</param.installpath.combo>
     <param.logo />
     <param.install.notes />
     <param.target.install.notes />
-    <param.intermediate>${PROJECT_ROOT}\TempNormGUI_20190302\for_testing</param.intermediate>
-    <param.files.only>${PROJECT_ROOT}\TempNormGUI_20190302\for_redistribution_files_only</param.files.only>
-    <param.output>${PROJECT_ROOT}\TempNormGUI_20190302\for_redistribution</param.output>
-    <param.logdir>${PROJECT_ROOT}\TempNormGUI_20190302</param.logdir>
+    <param.intermediate>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable\for_testing</param.intermediate>
+    <param.files.only>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable\for_redistribution_files_only</param.files.only>
+    <param.output>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable\for_redistribution</param.output>
+    <param.logdir>${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable</param.logdir>
     <param.enable.clean.build>false</param.enable.clean.build>
     <param.user.defined.mcr.options />
     <param.target.type>subtarget.standalone</param.target.type>
@@ -30,21 +38,18 @@ La Trobe University, Victoria, Australia</param.description>
     <param.web.mcr>true</param.web.mcr>
     <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>TempNormGUI_20190302_Installer</param.web.mcr.name>
+    <param.web.mcr.name>TempNormGUI_v20190302_Installer</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>true</param.windows.command.prompt>
     <param.create.log>false</param.create.log>
     <param.log.file />
     <unset>
-      <param.icon />
-      <param.icons />
       <param.version />
       <param.authnamewatermark />
       <param.email />
       <param.company />
       <param.summary />
-      <param.screenshot />
       <param.guid />
       <param.installpath.string />
       <param.installpath.combo />
@@ -68,7 +73,7 @@ La Trobe University, Victoria, Australia</param.description>
       <param.log.file />
     </unset>
     <fileset.main>
-      <file>${PROJECT_ROOT}\TempNormGUI_20190302.m</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_081210.m</file>
     </fileset.main>
     <fileset.resources>
       <file>${PROJECT_ROOT}\bw2mat.m</file>
@@ -123,22 +128,23 @@ La Trobe University, Victoria, Australia</param.description>
       <file>${PROJECT_ROOT}\splitPath.m</file>
       <file>${PROJECT_ROOT}\splitstring.m</file>
       <file>${PROJECT_ROOT}\subfigure.m</file>
-      <file>${PROJECT_ROOT}\TempNormGUI_20190302.fig</file>
-      <file>${PROJECT_ROOT}\TempNormGUI_20190302.m</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_081210.fig</file>
+      <file>${PROJECT_ROOT}\TempNormGUI_081210.m</file>
       <file>${PROJECT_ROOT}\ThightoHJC.m</file>
     </fileset.resources>
     <fileset.package>
       <file>${PROJECT_ROOT}\CompleteC3d2OutputVariableNames.csv</file>
       <file>${PROJECT_ROOT}\CustomC3d2OutputVariableNames.csv</file>
       <file>${PROJECT_ROOT}\license.txt</file>
+      <file>${PROJECT_ROOT}\TempNormGUI Addendum.doc</file>
       <file>${PROJECT_ROOT}\TempNormGUI_README.doc</file>
       <file>${PROJECT_ROOT}\TempNormGUI_README_260906.doc</file>
     </fileset.package>
     <fileset.depfun />
     <build-deliverables>
-      <file location="${PROJECT_ROOT}\TempNormGUI_20190302\for_testing" name="TempNormGUI_20190302.exe" optional="false">C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302\for_testing\TempNormGUI_20190302.exe</file>
-      <file location="${PROJECT_ROOT}\TempNormGUI_20190302\for_testing" name="readme.txt" optional="true">C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302\for_testing\readme.txt</file>
-      <file location="${PROJECT_ROOT}\TempNormGUI_20190302\for_testing" name="splash.png" optional="false">C:\Users\Prasanna\Documents\projects\kane-c3d-extract\TempNormGUI_20190302\for_testing\splash.png</file>
+      <file location="${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable\for_testing" name="readme.txt" optional="true">C:\Users\Prasanna\Documents\projects\temp-norm-gui\TempNormGUI_v20190302_Resdistributable\for_testing\readme.txt</file>
+      <file location="${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable\for_testing" name="TempNormGUI_v20190302.exe" optional="false">C:\Users\Prasanna\Documents\projects\temp-norm-gui\TempNormGUI_v20190302_Resdistributable\for_testing\TempNormGUI_v20190302.exe</file>
+      <file location="${PROJECT_ROOT}\TempNormGUI_v20190302_Resdistributable\for_testing" name="splash.png" optional="false">C:\Users\Prasanna\Documents\projects\temp-norm-gui\TempNormGUI_v20190302_Resdistributable\for_testing\splash.png</file>
     </build-deliverables>
     <workflow />
     <matlab>
