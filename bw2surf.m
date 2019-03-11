@@ -2,6 +2,7 @@ function bw2surf(bwArray)
 
 [nRows, nCols, nLayers] = size(bwArray);
 
+
 %%  Generate x and y matricies
 xData = 1:nRows;
 for i = 1:nCols

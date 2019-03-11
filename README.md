@@ -5,7 +5,7 @@ Matlab tool for extracting, normalising and summarising C3D data.
 Originally written for the University of Western Australia.
 
 Last updated:\
-12 March 2019
+2 March 2019
 
 Updated by:\
 Prasanna Sritharan\

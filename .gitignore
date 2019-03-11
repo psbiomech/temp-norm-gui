@@ -3,9 +3,12 @@
 
 
 # redistributable release folders
-TempNormGUI_v20190302_Redistributable/
-TempNormGUI_v20190302_Redistributable_resources/
+TempNormGUI_v20190312_Redistributable/
+TempNormGUI_v20190312_Redistributable_resources/
 
 # matlab app release folders
-TempNormGUI_v20190302_MatlabApp/
-TempNormGUI_v20190302_MatlabApp_resources/
+TempNormGUI_v20190312_MatlabApp/
+TempNormGUI_v20190312_MatlabApp_resources/
+
+# all log files
+*.log
