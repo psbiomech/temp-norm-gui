@@ -718,11 +718,11 @@ else
         for j=1:lengthKinVariableListIn
             
             % match 3D labels, ignore any prefix in marker name (Prasanna Sritharan, 2019)
-            matchidx = regexp(MarkerLabels(i),['w*:?' kinVariableListIn(j)]);
+            matchidx = regexp(MarkerLabels{i},['w*:?' kinVariableListIn{j}]);
             
             %if strcmp(MarkerLabels(i), kinVariableListIn(j))
-            if ~isempty(matchidx{1})    % Prasanna Sritharan, 2019
-                eval(['MarkerStruct. ' char(kinVariableListIn(j)) ' = squeeze(Markers(:,i,:));']);
+            if ~isempty(matchidx)    % Prasanna Sritharan, 2019
+                eval(['MarkerStruct. ' char(kinVariableListIn{j}) ' = squeeze(Markers(:,i,:));']);
                 %numKinVarsFound = numKinVarsFound + 1;
             end
         end

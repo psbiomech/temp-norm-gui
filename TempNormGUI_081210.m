@@ -122,7 +122,8 @@ varargout{1} = handles.numberOfEvents;
 %%   Define files to be processed
 %function pushbuttonSelectFiles_ButtonDownFcn(hObject, eventdata, handles)
 function pushbuttonSelectFiles_Callback(hObject, eventdata, handles)
-[fileNames, filePath] = uigetfile('*.c3d', 'Select files for processing', 'C:\', 'MultiSelect', 'on');
+%[fileNames, filePath] = uigetfile('*.c3d', 'Select files for processing', 'C:\', 'MultiSelect', 'on');
+[fileNames, filePath] = uigetfile('*.c3d', 'Select files for processing', pwd, 'MultiSelect', 'on');  % Prasanna Sritharan, May 2019
 handles.fileNames = fileNames;
 handles.filePath = filePath;
 handles.numberOfFiles = size(char(fileNames), 1);
@@ -5471,7 +5472,8 @@ guidata(hObject, handles)
 
 % --- Executes on button press in pushbuttonSelectCompleteC3d2OutputNamesCsvFile.
 function pushbuttonSelectCompleteC3d2OutputNamesCsvFile_Callback(hObject, eventdata, handles)
-[handles.completeC3d2OutputNamesCsvFileName, handles.completeC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your C3D and output variable names', 'C:\Program Files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+%[handles.completeC3d2OutputNamesCsvFileName, handles.completeC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your C3D and output variable names',  'C:\Program Files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+[handles.completeC3d2OutputNamesCsvFileName, handles.completeC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your C3D and output variable names', handles.filePath, 'MultiSelect', 'off');  % Prasanna Sritharan, May 2019
 completeVariablesFileName = fullfile(handles.completeC3d2OutputNamesCsvPathName, handles.completeC3d2OutputNamesCsvFileName);
 [c3dVariableNames, outputVariableNames(:,1), outputVariableNames(:,2), outputVariableNames(:,3)]  = textread(completeVariablesFileName, '%s%s%s%s', 'delimiter', ',', 'headerlines', 1);
 handles.complete.c3dVariableNames = c3dVariableNames;
@@ -5480,9 +5482,20 @@ guidata(hObject, handles);
 
 % --- Executes on button press in pushbuttonSelectCustomC3d2OutputNamesCsvFile.
 function pushbuttonSelectCustomC3d2OutputNamesCsvFile_Callback(hObject, eventdata, handles)
-[handles.customC3d2OutputNamesCsvFileName, handles.customC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your custom C3D and output variable names', 'C:\Program Files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+%[handles.customC3d2OutputNamesCsvFileName, handles.customC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your custom C3D and output variable names',  'C:\Program Files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+[handles.customC3d2OutputNamesCsvFileName, handles.customC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your custom C3D and output variable names', handles.filePath, 'MultiSelect', 'off');  % Prasanna Sritharan, May 2019
 customVariablesFileName = fullfile(handles.customC3d2OutputNamesCsvPathName, handles.customC3d2OutputNamesCsvFileName);
 handles.custom.outputVariableNames = textread(customVariablesFileName, '%s', 'delimiter', ',');
 guidata(hObject, handles);
 
 
+
+
+% --- Executes on key press with focus on pushbuttonSelectFiles and none of its controls.
+function pushbuttonSelectFiles_KeyPressFcn(hObject, eventdata, handles)
+% hObject    handle to pushbuttonSelectFiles (see GCBO)
+% eventdata  structure with the following fields (see MATLAB.UI.CONTROL.UICONTROL)
+%	Key: name of the key that was pressed, in lower case
+%	Character: character interpretation of the key(s) that was pressed
+%	Modifier: name(s) of the modifier key(s) (i.e., control, shift) pressed
+% handles    structure with handles and user data (see GUIDATA)

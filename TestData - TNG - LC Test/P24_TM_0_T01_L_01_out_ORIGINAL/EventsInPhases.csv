@@ -1,0 +1,9 @@
+Original file: C:\Users\KMiddleton\Desktop\TNG - LC Test\P24_TM_0_T01_L_01.c3d
+Date processed: 26-Apr-2019
+Processed with TempNormGUI_240509 
+-999 indicates the event did not occur within the phase of interst
+
+Phase,StartEvent,EndEvent,HS1_Time,HS1_Pct,TO_Time,TO_Pct,HS2_Time,HS2_Pct,
+Stride,HS1,HS2,  0.00,     0,  0.72,    65,  1.10,   100,
+Stance,HS1,TO,  0.00,     0,  0.72,   100,-999.00,  -999,
+Swing,TO,HS2,-999.00,  -999,  0.00,     0,  0.38,   100,
