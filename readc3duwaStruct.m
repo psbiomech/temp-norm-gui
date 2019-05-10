@@ -715,11 +715,15 @@ else
     numKinVarsFound = 0;
     kinDataIndex = 1;
     for i=1:Nmarkers;
-        for j=1:lengthKinVariableListIn
-            
-            % match 3D labels, ignore any prefix in marker name (Prasanna Sritharan, 2019)
-            matchidx = regexp(MarkerLabels{i},['w*:?' kinVariableListIn{j}]);
-            
+        
+        for j=1:lengthKinVariableListIn           
+                        
+            % extract label name from name prefix
+            % Note: the w*:? expression is to capture any name prefix that is
+            % sometimes prepended to the label, e.g. JohnSmith:LACJ
+            % (Prasanna Sritharan, 2019)
+            matchidx = regexp(MarkerLabels{i},['w*:?(' kinVariableListIn{j} ')$'],'once');
+
             %if strcmp(MarkerLabels(i), kinVariableListIn(j))
             if ~isempty(matchidx)    % Prasanna Sritharan, 2019
                 eval(['MarkerStruct. ' char(kinVariableListIn{j}) ' = squeeze(Markers(:,i,:));']);
