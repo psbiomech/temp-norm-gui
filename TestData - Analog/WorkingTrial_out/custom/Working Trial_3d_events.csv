@@ -1,0 +1,9 @@
+Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - Analog\Working Trial.c3d
+Date processed: 11-May-2019
+Video sampling rate (Hz): 100.00
+Processed with TempNormGUI_v20190510
+
+
+Event name:,Event time [s]:, Event frame:, LAnkleFlexExtPower,LAnkleInvEvPower,LAnkleAddAbdPower,LHipFlexExt,LHipAddAbd,LHipIntExtRot,LHipFlexExtMom,LHipAddAbdMom,LHipIntExtRotMom,LHipFlexExtPower,LHipAddAbdPower,LHipIntExtRotPower,LKneeFlexExt,LKneeAddAbd,LKneeIntExtRot,LKneeFlexExtMom,LKneeAddAbdMom,LKneeIntExtRotMom,LKneeFlexExtPower,LKneeAddAbdPower,LKneeIntExtRotPower,RAnkleFlexExtPower,RAnkleInvEvPower,RAnkleAddAbdPower,RHipFlexExt,RHipAddAbd,RHipIntExtRot,RHipFlexExtMom,RHipAddAbdMom,RHipIntExtRotMom,RHipFlexExtPower,RHipAddAbdPower,RHipIntExtRotPower,RKneeFlexExt,RKneeAddAbd,RKneeIntExtRot,RKneeFlexExtMom,RKneeAddAbdMom,RKneeIntExtRotMom,RKneeFlexExtPower,RKneeAddAbdPower,RKneeIntExtRotPower,
+G1,  6.88,   688,0.22236,0.13064,0.70920,99.62766,-6.04102,-3.77217,2.25024,-6.33728,5.08524,-0.19758,1.22479,-7.44475,42.82610,21.83760,-22.85843,6.95134,-3.13541,-0.69896,-14.30633,0.38189,1.84971,14.96279,3.90301,-1.70068,68.23527,20.02633,-33.39474,-19.57139,-46.01323,3.57462,31.34874,-4.23052,10.70977,124.18497,-44.63683,-94.74171,-44.50477,84.85474,15.15445,-28.95385,-86.44402,0.36462,
+G2,  7.43,   743,-18.14588,1.43411,1.29312,108.26433,-1.93417,-15.71195,-93.15086,-22.79743,48.09358,-21.62183,19.25488,-2.60859,92.27885,20.12767,-8.66758,-52.53200,-41.19459,5.76803,-5.00428,3.60180,3.31549,-0.08282,-0.11493,-0.46261,35.67656,8.31048,-37.51940,18.17407,6.91114,11.16381,-2.37356,1.80248,0.05927,102.86407,-51.85485,-86.99950,-18.62311,28.18786,-0.99751,11.59707,22.47596,3.03148,

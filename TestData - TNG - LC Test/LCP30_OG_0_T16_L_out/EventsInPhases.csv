@@ -1,0 +1,8 @@
+Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - TNG - LC Test\LCP30_OG_0_T16_L.c3d
+Date processed: 11-May-2019
+Processed with TempNormGUI_v20190510
+-999 indicates the event did not occur within the phase of interst
+
+Phase,StartEvent,EndEvent,G1_Time,G1_Pct,G2_Time,G2_Pct,G3_Time,G3_Pct,
+P1,G1,G2,  0.00,     0,  0.61,   100,-999.00,  -999,
+P2,G2,G3,-999.00,  -999,  0.00,     0,  0.38,   100,

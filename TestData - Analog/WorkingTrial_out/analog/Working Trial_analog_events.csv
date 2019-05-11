@@ -1,0 +1,9 @@
+Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - Analog\Working Trial.c3d
+Date processed: 11-May-2019
+Analog sampling rate (Hz): 1000.00
+Processed with TempNormGUI_v20190510
+
+
+Event name:,Event frame:,Event time [s]:,Force,Moment,
+G1,  6880,  6.88,0.00000,0.00000,0.00000,-9.32492,92.92117,481.71796,0.00000,0.00000,0.00000,-66763.49219,-74049.71875,15191.23047,
+G2,  7430,  7.43,-17.10936,-72.59337,460.91870,2.97314,34.20844,125.17642,15941.70996,-98699.43750,-4213.39307,-17798.47070,-13020.05273,5147.55078,

@@ -1,7 +1,9 @@
 function varargout = TempNormGUI_081210(varargin)
 
 % Modified by GUIDE v2.5 08-Dec-2010 11:16:01
-% Modified by Prasanna Sritharan, 2 March 2019
+
+% Last modified by Prasanna Sritharan, 10 May 2019
+
 
 %% Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -647,7 +649,7 @@ guidata(hObject, handles);
 %%   ----- GO Button processing --------------------------------------------------
 function pushbuttonGO_Callback(hObject, eventdata, handles)
 close all;
-TempNormGuiVersion = 1.1;
+TempNormGuiVersion = 'v20190510';   % Prasanna Sritharan
 
 % add code root to path (Added by Prasanna Sritharan, 2019)
 addpath(pwd);
@@ -787,6 +789,7 @@ for trialIndex = 1:handles.numberOfFiles;
     end
         
     %   Generate custom output variable array
+    custom3dData.outputVariables = [];  % Prasanna Sritharan
     if handles.process3d
         [nRows, nCols] = size(handles.custom.outputVariableNames);
         completeOutputNames = fieldnames(complete3dData.outputVariables);
@@ -1237,7 +1240,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Video sampling rate (Hz): ');
         fprintf(fid, '%6.2f', videoFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '%s', 'Right gait velocity [m/s],');
@@ -1302,7 +1305,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Video sampling rate (Hz): ');
         fprintf(fid, '%6.2f', videoFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '%s', 'Frame,');
@@ -1328,7 +1331,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Video sampling rate (Hz): ');
         fprintf(fid, '%6.2f', videoFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '%s', 'Frame,');
@@ -1398,7 +1401,7 @@ for trialIndex = 1:handles.numberOfFiles;
             fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
             fprintf(fid, '%6.2f', analogFrameRate);
             fprintf(fid, '\n');
-            fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+            fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
             fprintf(fid, '\n');
             fprintf(fid, '\n');
             fprintf(fid, '%s', 'Frame,');
@@ -1424,7 +1427,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
         fprintf(fid, '%6.2f', analogFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '%s', 'Frame,');
@@ -1455,7 +1458,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Video sampling rate (Hz): ');
         fprintf(fid, '%6.2f', videoFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '\n');
@@ -1489,7 +1492,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Video sampling rate (Hz): ');
         fprintf(fid, '%6.2f', videoFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '\n');
@@ -1526,7 +1529,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
         fprintf(fid, '%6.2f', analogFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '\n');
@@ -1585,7 +1588,7 @@ for trialIndex = 1:handles.numberOfFiles;
             fprintf(fid, '%s', 'NaN');
         end
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '\n');
@@ -1645,7 +1648,7 @@ for trialIndex = 1:handles.numberOfFiles;
                 fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                 fprintf(fid, '%6.2f', videoFrameRate);
                 fprintf(fid, '\n');
-                fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                 fprintf(fid, '\n');
                 fprintf(fid, '\n');
                 fprintf(fid, '%s', 'Frame,');
@@ -1680,7 +1683,7 @@ for trialIndex = 1:handles.numberOfFiles;
                 fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                 fprintf(fid, '%6.2f', videoFrameRate);
                 fprintf(fid, '\n');
-                fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                 fprintf(fid, '\n');
                 fprintf(fid, '\n');
                 fprintf(fid, '%s', 'Frame,');
@@ -1719,7 +1722,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', analogFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', 'Frame,');
@@ -1752,7 +1755,7 @@ for trialIndex = 1:handles.numberOfFiles;
                 fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
                 fprintf(fid, '%6.2f', analogFrameRate);
                 fprintf(fid, '\n');
-                fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                 fprintf(fid, '\n');
                 fprintf(fid, '\n');
                 fprintf(fid, '%s', 'Frame,');
@@ -1802,7 +1805,7 @@ for trialIndex = 1:handles.numberOfFiles;
                 fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                 fprintf(fid, '%6.2f', videoFrameRate);
                 fprintf(fid, '\n');
-                fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                 fprintf(fid, '\n');
                 fprintf(fid, '\n');
                 fprintf(fid, '%s', 'Frame,');
@@ -1839,7 +1842,7 @@ for trialIndex = 1:handles.numberOfFiles;
                 fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                 fprintf(fid, '%6.2f', videoFrameRate);
                 fprintf(fid, '\n');
-                fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                 fprintf(fid, '\n');
                 fprintf(fid, '\n');
                 fprintf(fid, '%s', 'Frame,');
@@ -1880,7 +1883,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', analogFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', 'Frame,');
@@ -1916,7 +1919,7 @@ for trialIndex = 1:handles.numberOfFiles;
                 fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
                 fprintf(fid, '%6.2f', analogFrameRate);
                 fprintf(fid, '\n');
-                fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                 fprintf(fid, '\n');
                 fprintf(fid, '\n');
                 fprintf(fid, '%s', 'Frame,');
@@ -1958,7 +1961,7 @@ for trialIndex = 1:handles.numberOfFiles;
     fprintf(fid, '%s', 'Date processed: ');
     fprintf(fid, '%s', date);
     fprintf(fid, '\n');
-    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
     fprintf(fid, '\n');
     fprintf(fid, '%s', '-999 indicates the event did not occur within the phase of interst');
     fprintf(fid, '\n');
@@ -2000,7 +2003,7 @@ for trialIndex = 1:handles.numberOfFiles;
             fprintf(fid, '%s', 'Video sampling rate (Hz): ');
             fprintf(fid, '%6.2f', videoFrameRate);
             fprintf(fid, '\n');
-            fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+            fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
             fprintf(fid, '\n');
             fprintf(fid, '\n');
             fprintf(fid, '%s', ',');
@@ -2110,7 +2113,7 @@ for trialIndex = 1:handles.numberOfFiles;
             fprintf(fid, '%s', 'Video sampling rate (Hz): ');
             fprintf(fid, '%6.2f', videoFrameRate);
             fprintf(fid, '\n');
-            fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+            fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
             fprintf(fid, '\n');
             fprintf(fid, '\n');
             fprintf(fid, '%s', ',');
@@ -2223,7 +2226,7 @@ for trialIndex = 1:handles.numberOfFiles;
             fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
             fprintf(fid, '%6.2f', analogFrameRate);
             fprintf(fid, '\n');
-            fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+            fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
             fprintf(fid, '\n');
             fprintf(fid, '\n');
             fprintf(fid, '%s', ',');
@@ -2330,7 +2333,7 @@ for trialIndex = 1:handles.numberOfFiles;
         fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
         fprintf(fid, '%6.2f', analogFrameRate);
         fprintf(fid, '\n');
-        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
         fprintf(fid, '\n');
         fprintf(fid, '\n');
         fprintf(fid, '%s', ',');
@@ -2453,7 +2456,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', videoFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', ',');
@@ -2612,7 +2615,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', videoFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', ',');
@@ -2746,7 +2749,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', videoFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', ',');
@@ -2905,7 +2908,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Video sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', videoFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', ',');
@@ -3051,7 +3054,7 @@ for trialIndex = 1:handles.numberOfFiles;
                         fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
                         fprintf(fid, '%6.2f', analogFrameRate);
                         fprintf(fid, '\n');
-                        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                         fprintf(fid, '\n');
                         fprintf(fid, '\n');
                         fprintf(fid, '%s', ',');
@@ -3209,7 +3212,7 @@ for trialIndex = 1:handles.numberOfFiles;
                         fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
                         fprintf(fid, '%6.2f', analogFrameRate);
                         fprintf(fid, '\n');
-                        fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                        fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                         fprintf(fid, '\n');
                         fprintf(fid, '\n');
                         fprintf(fid, '%s', ',');
@@ -3343,7 +3346,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', analogFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', ',');
@@ -3502,7 +3505,7 @@ for trialIndex = 1:handles.numberOfFiles;
                     fprintf(fid, '%s', 'Analog sampling rate (Hz): ');
                     fprintf(fid, '%6.2f', analogFrameRate);
                     fprintf(fid, '\n');
-                    fprintf(fid, '%s', 'Processed with TempNormGUI_240509 ');
+                    fprintf(fid, 'Processed with TempNormGUI_%s', TempNormGuiVersion);        % Prasanna Sritharan
                     fprintf(fid, '\n');
                     fprintf(fid, '\n');
                     fprintf(fid, '%s', ',');
@@ -5441,13 +5444,17 @@ if handles.generateOrUpdateSummarySpreadsheet == 1
     generateOrUpdate = menu('Select whether you want to create a new summary spreadsheet of update an existing one?', 'Create new', 'Update existing');
 
     if generateOrUpdate == 1;
-        [handles.summaryOutputFileName, handles.summaryOutputPathName] = uiputfile('*.csv', 'Select name and location of output summary file to be generated', 'C:\Program files\Matlab Executables\TempNormGUI\summaryOutputFile.csv');
+        %[handles.summaryOutputFileName, handles.summaryOutputPathName] = uiputfile('*.csv', 'Select name and location of output summary file to be generated', 'C:\\Program files\Matlab Executables\TempNormGUI\summaryOutputFile.csv');
+        [handles.summaryOutputFileName, handles.summaryOutputPathName] = uiputfile('*.csv', 'Select name and location of output summary file to be generated', [handles.filePath '\summaryOutputFile.csv']);     % Prasanna Sritharan   
     elseif generateOrUpdate == 2
-        [handles.summaryOutputFileName, handles.summaryOutputPathName] = uigetfile('*.csv', 'Select output summary file', 'C:\Program files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+        %[handles.summaryOutputFileName, handles.summaryOutputPathName] = uigetfile('*.csv', 'Select output summary file', 'C:\Program files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+        [handles.summaryOutputFileName, handles.summaryOutputPathName] = uigetfile('*.csv', 'Select output summary file', handles.filePath, 'MultiSelect', 'off');      % Prasanna Sritharan
+
     end
 
     %   Select input file for this
-    [handles.summaryInputFileName, handles.summaryInputPathName] = uigetfile(['*.xls;*.csv'], 'Select input template file', 'C:\Program files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+    %[handles.summaryInputFileName, handles.summaryInputPathName] = uigetfile(['*.xls;*.csv'], 'C:\Program files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
+    [handles.summaryInputFileName, handles.summaryInputPathName] = uigetfile(['*.xls;*.csv'], handles.filePath, 'MultiSelect', 'off');  % Prasanna Sritharan
     if strmatch(handles.summaryInputFileName(end-2:end), 'xls')
         msgbox('MS Excel files will not be supported in future releases! Save your input template file as a CSV file', 'Warning!', 'warn');
         [handles.numericInputVariables, handles.summaryOutputVariables, handles.rawInputVariables] = xlsread(fullfile(handles.summaryInputPathName, handles.summaryInputFileName));

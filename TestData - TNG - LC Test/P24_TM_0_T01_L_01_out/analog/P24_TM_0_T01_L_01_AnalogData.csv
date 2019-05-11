@@ -1,7 +1,7 @@
 Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - TNG - LC Test\P24_TM_0_T01_L_01.c3d
 Date processed: 11-May-2019
 Analog sampling rate (Hz): 100.00
-Processed with TempNormGUI_240509 
+Processed with TempNormGUI_v20190510
 
 Frame,Time [s],accel,gyro,mag,
 1.00000,0.00000,2.01765,-15.67089,3.84461,4.40792,-1.01542,-5.63692,0.00001,-0.00003,-0.00000
