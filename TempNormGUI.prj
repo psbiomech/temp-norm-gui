@@ -12,7 +12,7 @@
     <param.authnamewatermark />
     <param.email />
     <param.company />
-    <param.summary>Last updated: 10 May 2019
+    <param.summary>Last updated: 14 May 2019
 Updated by: Prasanna Sritharan</param.summary>
     <param.description />
     <param.screenshot>${PROJECT_ROOT}\TempNormGUI_Splash.jpg</param.screenshot>
@@ -33,7 +33,7 @@ Updated by: Prasanna Sritharan</param.summary>
     <param.web.mcr>true</param.web.mcr>
     <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>TempNormGUI_v20190510</param.web.mcr.name>
+    <param.web.mcr.name>TempNormGui_v20190514_Installer</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>true</param.windows.command.prompt>

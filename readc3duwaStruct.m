@@ -293,7 +293,8 @@ end
 %  Get the coordinate and analog data
 
 fseek(fid,(NrecordDataBlock-1)*512,'bof');
-hWaitBar = waitbar(0,[FileName,' is loading...']);
+hWaitBar = waitbar(0,[strrep(FileName,'_','-'),' is loading...']);       % Prasanna Sritharan
+%hWaitBar = waitbar(0,[FileName,' is loading...']);
 NvideoFrames = EndFrame - StartFrame + 1;
 
 %   Preallocate arrays - takes much longer when arrays are preallocated???

@@ -649,7 +649,7 @@ guidata(hObject, handles);
 %%   ----- GO Button processing --------------------------------------------------
 function pushbuttonGO_Callback(hObject, eventdata, handles)
 close all;
-TempNormGuiVersion = 'v20190510';   % Prasanna Sritharan
+%TempNormGuiVersion = 'v20190510';   % Prasanna Sritharan
 
 % add code root to path (Added by Prasanna Sritharan, 2019)
 addpath(pwd);
@@ -729,6 +729,9 @@ end
 %%   Read c3d data
 for trialIndex = 1:handles.numberOfFiles;
     close all
+    
+    TempNormGuiVersion = 'v20190514';   % Prasanna Sritharan
+    
     if iscell(handles.fileNames)
         fullFileName = fullfile(handles.filePath, char(handles.fileNames(trialIndex)));
     else
