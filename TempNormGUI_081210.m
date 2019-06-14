@@ -30,6 +30,8 @@ function TempNormGUI_081210_OpeningFcn(hObject, eventdata, handles, varargin)
 % --- Executes during object creation, after setting all properties.
 close all
 
+handles.filePath = pwd; % Prasanna Sritharan
+
 %   Set defaults for required fields
 handles.generateOrUpdateSummarySpreadsheet = 0;
 handles.getEventLabelsFromC3d = 0;
@@ -126,11 +128,12 @@ varargout{1} = handles.numberOfEvents;
 function pushbuttonSelectFiles_Callback(hObject, eventdata, handles)
 %[fileNames, filePath] = uigetfile('*.c3d', 'Select files for processing', 'C:\', 'MultiSelect', 'on');
 [fileNames, filePath] = uigetfile('*.c3d', 'Select files for processing', pwd, 'MultiSelect', 'on');  % Prasanna Sritharan, May 2019
-handles.fileNames = fileNames;
-handles.filePath = filePath;
-handles.numberOfFiles = size(char(fileNames), 1);
-guidata(hObject, handles);
-
+if (fileNames~=0)
+    handles.fileNames = fileNames;
+    handles.filePath = filePath;
+    handles.numberOfFiles = size(char(fileNames), 1);
+    guidata(hObject, handles);
+end
 
 %%   Select activity and define relevant markerset
 function popupDataType_CreateFcn(hObject, eventdata, handles)
@@ -5484,20 +5487,23 @@ guidata(hObject, handles)
 function pushbuttonSelectCompleteC3d2OutputNamesCsvFile_Callback(hObject, eventdata, handles)
 %[handles.completeC3d2OutputNamesCsvFileName, handles.completeC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your C3D and output variable names',  'C:\Program Files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
 [handles.completeC3d2OutputNamesCsvFileName, handles.completeC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your C3D and output variable names', handles.filePath, 'MultiSelect', 'off');  % Prasanna Sritharan, May 2019
-completeVariablesFileName = fullfile(handles.completeC3d2OutputNamesCsvPathName, handles.completeC3d2OutputNamesCsvFileName);
-[c3dVariableNames, outputVariableNames(:,1), outputVariableNames(:,2), outputVariableNames(:,3)]  = textread(completeVariablesFileName, '%s%s%s%s', 'delimiter', ',', 'headerlines', 1);
-handles.complete.c3dVariableNames = c3dVariableNames;
-handles.complete.outputVariableNames = outputVariableNames;
-guidata(hObject, handles);
+if (handles.completeC3d2OutputNamesCsvFileName~=0)
+    completeVariablesFileName = fullfile(handles.completeC3d2OutputNamesCsvPathName, handles.completeC3d2OutputNamesCsvFileName);
+    [c3dVariableNames, outputVariableNames(:,1), outputVariableNames(:,2), outputVariableNames(:,3)]  = textread(completeVariablesFileName, '%s%s%s%s', 'delimiter', ',', 'headerlines', 1);
+    handles.complete.c3dVariableNames = c3dVariableNames;
+    handles.complete.outputVariableNames = outputVariableNames;
+    guidata(hObject, handles);
+end
 
 % --- Executes on button press in pushbuttonSelectCustomC3d2OutputNamesCsvFile.
 function pushbuttonSelectCustomC3d2OutputNamesCsvFile_Callback(hObject, eventdata, handles)
 %[handles.customC3d2OutputNamesCsvFileName, handles.customC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your custom C3D and output variable names',  'C:\Program Files\Matlab Executables\TempNormGUI\', 'MultiSelect', 'off');
 [handles.customC3d2OutputNamesCsvFileName, handles.customC3d2OutputNamesCsvPathName] = uigetfile('*.csv', 'Select csv file that contains your custom C3D and output variable names', handles.filePath, 'MultiSelect', 'off');  % Prasanna Sritharan, May 2019
-customVariablesFileName = fullfile(handles.customC3d2OutputNamesCsvPathName, handles.customC3d2OutputNamesCsvFileName);
-handles.custom.outputVariableNames = textread(customVariablesFileName, '%s', 'delimiter', ',');
-guidata(hObject, handles);
-
+if (handles.customC3d2OutputNamesCsvFileName~=0)
+    customVariablesFileName = fullfile(handles.customC3d2OutputNamesCsvPathName, handles.customC3d2OutputNamesCsvFileName);
+    handles.custom.outputVariableNames = textread(customVariablesFileName, '%s', 'delimiter', ',');
+    guidata(hObject, handles);
+end
 
 
 

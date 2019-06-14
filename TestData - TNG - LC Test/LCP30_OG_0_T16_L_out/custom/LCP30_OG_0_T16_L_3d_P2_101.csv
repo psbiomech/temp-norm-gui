@@ -1,9 +1,9 @@
 Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - TNG - LC Test\LCP30_OG_0_T16_L.c3d
-Date processed: 14-May-2019
+Date processed: 13-Jun-2019
 Start of phase/cycle with respect to start of entire trial [s]:   3.60
 End of phase/cycle with respect to start of entire trial [s]:   3.98
 Video sampling rate (Hz): 100.00
-Processed with TempNormGUI_v20190510
+Processed with TempNormGUI_v20190514
 
 Frame,% of phase/cycle,GlobalPelvisObl,GlobalPelvisRot,GRF1z,GRF2z,LAJCx,LAJCy,LHipFlexExt,LHipAddAbd,LHipIntExtRot,LKneeFlexExt,MomentJCSLAnkleFlexExt,MomentJCSLHipFlexExt,MomentJCSLHipAbdAdd,MomentJCSLHipIntExtRot,MomentJCSLKneeFlexExt,MomentJCSRAnkleFlexExt,MomentJCSRHipFlexExt,MomentJCSRHipAbdAdd,MomentJCSRHipIntExtRot,MomentJCSRKneeFlexExt,PowerJCSLAnkleFlexExt,PowerJCSLHipFlexExt,PowerJCSLHipAbdAdd,PowerJCSLHipIntExtRot,PowerJCSLKneeFlexExt,PowerJCSRAnkleFlexExt,PowerJCSRHipFlexExt,PowerJCSRHipAbdAdd,PowerJCSRHipIntExtRot,PowerJCSRKneeFlexExt,RAJCx,RAJCy,RHipFlexExt,RHipAddAbd,RHipIntExtRot,RKneeFlexExt,
    NaN,0.00000,-8.36660,4.66267,741.32800,95.03696,-162.61327,176.63510,-6.72624,-5.47528,-5.98900,34.12360,6.08434,64.42223,19.22187,-5.10547,-34.37357,8.47071,11.36549,-52.68821,5.71990,-36.09483,-24.07887,224.88020,-34.35262,17.44766,-207.46997,13.25047,-22.48628,12.69321,-50.34428,12.33891,377.88461,95.92231,23.31183,6.18719,-10.48141,10.86983
