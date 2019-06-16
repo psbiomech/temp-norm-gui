@@ -1,9 +1,9 @@
 Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - TNG - LC Test\P24_TM_0_T01_L_01.c3d
-Date processed: 14-May-2019
+Date processed: 16-Jun-2019
 Start of phase/cycle with respect to start of entire trial [s]:   0.84
 End of phase/cycle with respect to entire trial [s]:   1.22
 Analog sampling rate (Hz): 100.00
-Processed with TempNormGUI_v20190510
+Processed with TempNormGUI_v20190514
 
 Frame,Time [s],accel,gyro,mag,
 

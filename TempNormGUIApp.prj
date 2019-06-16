@@ -1,31 +1,32 @@
 <deployment-project plugin="plugin.apptool" plugin-version="1.0">
-  <configuration build-checksum="3642474386" file="C:\Users\Prasanna\Documents\projects\temp-norm-gui\TempNormGUIApp.prj" location="C:\Users\Prasanna\Documents\projects\temp-norm-gui" name="TempNormGUIApp" target="target.mlapps" target-name="Package App">
+  <configuration build-checksum="3362366963" file="C:\Users\Prasanna\Documents\projects\temp-norm-gui\TempNormGUIApp.prj" location="C:\Users\Prasanna\Documents\projects\temp-norm-gui" name="TempNormGUIApp" target="target.mlapps" target-name="Package App">
     <param.appname>TempNormGUIApp</param.appname>
     <param.authnamewatermark />
     <param.email />
     <param.company />
-    <param.icon />
-    <param.icons />
-    <param.summary>Last updated: 14 June 2019
+    <param.icon>${PROJECT_ROOT}\TempNormGUIApp_resources\icon_24.png</param.icon>
+    <param.icons>
+      <file>${PROJECT_ROOT}\TempNormGUIApp_resources\icon_48.png</file>
+      <file>${PROJECT_ROOT}\TempNormGUIApp_resources\icon_24.png</file>
+      <file>${PROJECT_ROOT}\TempNormGUIApp_resources\icon_16.png</file>
+    </param.icons>
+    <param.summary>Last updated: 16 June 2019
 Updated by: Prasanna Sritharan</param.summary>
     <param.description />
     <param.screenshot />
-    <param.version>1.0</param.version>
+    <param.version>2019.0616</param.version>
     <param.products.name />
     <param.products.id />
     <param.products.version />
     <param.platforms />
     <param.output>C:\Users\Prasanna\Documents\projects\temp-norm-gui</param.output>
-    <param.guid>d3e2cf50-8db7-4f3b-8e2b-ff870483ae8e</param.guid>
+    <param.guid>af6db13e-140a-4dfe-b076-d8bfdd5bbdea</param.guid>
     <unset>
       <param.authnamewatermark />
       <param.email />
       <param.company />
-      <param.icon />
-      <param.icons />
       <param.description />
       <param.screenshot />
-      <param.version />
       <param.products.name />
       <param.products.id />
       <param.products.version />

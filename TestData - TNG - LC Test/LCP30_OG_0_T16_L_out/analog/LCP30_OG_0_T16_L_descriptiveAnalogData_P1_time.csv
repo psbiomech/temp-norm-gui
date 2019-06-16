@@ -1,0 +1,12 @@
+Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - TNG - LC Test\LCP30_OG_0_T16_L.c3d
+Date processed: 16-Jun-2019
+Start of phase/cycle with respect to start of entire trial [s]:   2.99
+End of phase/cycle with respect to start of entire trial [s]:   3.60
+Analog sampling rate (Hz): 1000.00
+Processed with TempNormGUI_v20190514
+
+,Force,Moment,accel,gyro,mag,
+Maximum
+  Magnitude,33.51648,11.95525,755.73328,7.68995,146.84972,856.16693,169.95786,718.56195,3735.33081,23935.83789,-192.54410,2016.20435,7.24585,-6.02448,15.76945,4.70584,2.51955,6.05463,0.00000,-0.00001,0.00001,
+Absolute Maximum
+  Magnitude,33.51648,144.41290,755.73328,44.04385,146.84972,856.16693,68948.12500,74708.78906,8836.45313,58132.91797,24997.83398,2991.68750,17.02425,19.91656,15.76945,4.70584,2.72412,6.05463,0.00002,0.00005,0.00003,

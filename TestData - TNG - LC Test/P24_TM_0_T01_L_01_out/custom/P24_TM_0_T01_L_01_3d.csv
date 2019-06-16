@@ -1,7 +1,7 @@
 Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - TNG - LC Test\P24_TM_0_T01_L_01.c3d
-Date processed: 14-May-2019
+Date processed: 16-Jun-2019
 Video sampling rate (Hz): 100.00
-Processed with TempNormGUI_v20190510
+Processed with TempNormGUI_v20190514
 
 Frame,Time [s],GlobalPelvisObl,GlobalPelvisRot,LAJCx,LAJCy,LHipFlexExt,LHipAddAbd,LHipIntExtRot,LKneeFlexExt,MomentJCSLAnkleFlexExt,MomentJCSLHipFlexExt,MomentJCSLHipAbdAdd,MomentJCSLHipIntExtRot,MomentJCSLKneeFlexExt,MomentJCSRAnkleFlexExt,MomentJCSRHipFlexExt,MomentJCSRHipAbdAdd,MomentJCSRHipIntExtRot,MomentJCSRKneeFlexExt,PowerJCSLAnkleFlexExt,PowerJCSLHipFlexExt,PowerJCSLHipAbdAdd,PowerJCSLHipIntExtRot,PowerJCSLKneeFlexExt,PowerJCSRAnkleFlexExt,PowerJCSRHipFlexExt,PowerJCSRHipAbdAdd,PowerJCSRHipIntExtRot,PowerJCSRKneeFlexExt,RAJCx,RAJCy,RHipFlexExt,RHipAddAbd,RHipIntExtRot,RKneeFlexExt,
 1.00000,0.00000,-1.22948,1.35645,1001.45819,325.97272,36.90537,-0.72075,2.75061,26.80169,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,   NaN,650.35107,227.18779,2.57008,7.27267,7.41072,10.04494

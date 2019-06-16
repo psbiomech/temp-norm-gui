@@ -8,11 +8,11 @@
       <file>${PROJECT_ROOT}\TempNormGUI_resources\icon_24.png</file>
       <file>${PROJECT_ROOT}\TempNormGUI_resources\icon_16.png</file>
     </param.icons>
-    <param.version>2019.614</param.version>
+    <param.version>2019.0616</param.version>
     <param.authnamewatermark />
     <param.email />
     <param.company />
-    <param.summary>Last updated: 14 June 2019
+    <param.summary>Last updated: 16 June 2019
 Updated by: Prasanna Sritharan</param.summary>
     <param.description />
     <param.screenshot>${PROJECT_ROOT}\TempNormGUI_Splash.jpg</param.screenshot>
@@ -33,7 +33,7 @@ Updated by: Prasanna Sritharan</param.summary>
     <param.web.mcr>true</param.web.mcr>
     <param.package.mcr>false</param.package.mcr>
     <param.no.mcr>false</param.no.mcr>
-    <param.web.mcr.name>TempNormGUI_v20190614</param.web.mcr.name>
+    <param.web.mcr.name>TempNormGUI_v20190616</param.web.mcr.name>
     <param.package.mcr.name>MyAppInstaller_mcr</param.package.mcr.name>
     <param.no.mcr.name>MyAppInstaller_app</param.no.mcr.name>
     <param.windows.command.prompt>true</param.windows.command.prompt>
@@ -128,7 +128,6 @@ Updated by: Prasanna Sritharan</param.summary>
       <file>${PROJECT_ROOT}\ThightoHJC.m</file>
     </fileset.resources>
     <fileset.package>
-      <file>${PROJECT_ROOT}\license.txt</file>
       <file>${PROJECT_ROOT}\TempNormGUI Addendum.doc</file>
       <file>${PROJECT_ROOT}\TempNormGUI_README.doc</file>
       <file>${PROJECT_ROOT}\TempNormGUI_README_260906.doc</file>

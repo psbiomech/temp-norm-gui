@@ -1,7 +1,7 @@
 Original file: C:\Users\Prasanna\Documents\projects\temp-norm-gui\TestData - TNG - LC Test\LCP30_OG_0_T16_L.c3d
-Date processed: 14-May-2019
+Date processed: 16-Jun-2019
 Analog sampling rate (Hz): 1000.00
-Processed with TempNormGUI_v20190510
+Processed with TempNormGUI_v20190514
 
 Frame,Time [s],Force,Moment,accel,gyro,mag,
 1.00000,0.00000,0.30398,2.34782,59.72162,-0.35288,3.40779,63.71461,-768.37323,-419.97992,2881.95044,99.84469,-35.98268,-89.56684,0.26332,-11.37008,-0.02134,-1.37289,0.63392,-1.46770,-0.00001,-0.00002,-0.00001
